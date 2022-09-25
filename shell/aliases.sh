@@ -8,7 +8,7 @@ alias ll='ls -l'
 alias llg='ls -lg'
 alias llag='ls -lag'
 alias la='ls -a'
-alias lla='ls -alh'
+alias lla='ls -al'
 alias tree='ls -T'
 
 # cat as batcat
