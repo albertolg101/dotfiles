@@ -3,10 +3,10 @@
 - link:
     ~/.bash_profile:
     ~/.bashrc: 
-    ~/.dotfiles: ""
-    ~/.gitconfig:
-    ~/.vimrc:
     ~/.config/nvim/init.vim: 
         path: "vimrc"
         create: true
+    ~/.dotfiles: ""
+    ~/.gitconfig:
+    ~/.vimrc:
     ~/.zshrc: 
