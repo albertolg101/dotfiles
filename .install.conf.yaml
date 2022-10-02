@@ -3,10 +3,10 @@
 - link:
     ~/.bash_profile:
     ~/.bashrc: 
-    ~/.config/nvim/init.vim: 
-        path: "vimrc"
-        create: true
     ~/.dotfiles: ""
     ~/.gitconfig:
     ~/.vimrc:
     ~/.zshrc: 
+    /usr/local/share/fonts/NerdFonts:
+        if: '[ $EUID -eq 0 ]'
+        path: fonts/NerdFonts
