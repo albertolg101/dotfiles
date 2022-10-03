@@ -5,6 +5,7 @@
     ~/.bashrc: 
     ~/.dotfiles: ""
     ~/.gitconfig:
+    ~/.vim:
     ~/.vimrc:
     ~/.zshrc: 
     /usr/local/share/fonts/NerdFonts:

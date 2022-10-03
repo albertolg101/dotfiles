@@ -18,9 +18,6 @@ alias cat='batcat'
 alias cp='cp -i'
 alias mv='mv -i'
 
-# vim as nvim
-alias vim='nvim'
-
 # Update dotfiles
 dfu() {
     (
