@@ -45,3 +45,8 @@ colorscheme codedark
 let g:NERDSpaceDelims = 1       " Add spaces after comment delimiters by default
 let g:NERDDefaultAlign = 'left' " Align line-wise comment delimiters flush left instead of following code indentation
 let g:NERDCommentEmptyLines = 1 " Allow commenting and inverting empty lines (useful when commenting a region)
+
+"-----"
+" FZF "
+"-----"
+set rtp+=~/.dotfiles/lib/fzf

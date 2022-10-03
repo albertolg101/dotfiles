@@ -1,5 +1,8 @@
 - clean: ['~']
 
+- create:
+    - ~/.config
+
 - link:
     ~/.bash_profile:
     ~/.bashrc: 
@@ -11,3 +14,6 @@
     /usr/local/share/fonts/NerdFonts:
         if: '[ $EUID -eq 0 ]'
         path: fonts/NerdFonts
+
+- shell:
+    - lib/fzf/install --xdg --key-bindings --completion --no-update-rc 

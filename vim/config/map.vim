@@ -14,3 +14,6 @@ nnoremap <C-n> :set rnu!<CR>
 " NERDTree
 nnoremap <leader>n :call NERDTreeMoveCursor()<CR>
 nnoremap <C-b> :NERDTreeToggle<CR>
+
+" FZF
+nnoremap <leader>t :FZF<CR>

@@ -57,3 +57,8 @@
 [submodule "vim/pack/vendor/start/nerdtree"]
 	path = vim/pack/vendor/start/nerdtree
 	url = https://github.com/preservim/nerdtree
+	ignore = dirty
+[submodule "lib/fzf"]
+	path = lib/fzf
+	url = https://github.com/junegunn/fzf
+	ignore = dirty

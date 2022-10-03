@@ -18,6 +18,9 @@ alias cat='batcat'
 alias cp='cp -i'
 alias mv='mv -i'
 
+# fzf
+alias fzfp="fzf --preview 'bat --style=numbers --color=always --line-range :500 {}'"
+
 # Update dotfiles
 dfu() {
     (
