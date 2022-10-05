@@ -11,11 +11,18 @@ syntax on                       " turn on syntax highlighting
 set showmatch                   " show matching braces when text indicator is over them
 set autoindent
 
-" highlight current line, but only in active window "
+" highlight current line, but only in active window
 augroup CursorLineOnlyInActiveWindow
     autocmd!
     autocmd VimEnter,WinEnter,BufWinEnter * setlocal cursorline
     autocmd WinLeave * setlocal nocursorline
+augroup END
+
+" Persistent folds between sessions
+augroup AutoSaveFolds
+  autocmd!
+  autocmd BufWinLeave * mkview
+  autocmd BufWinEnter * silent loadview
 augroup END
 
 "----------------------"
