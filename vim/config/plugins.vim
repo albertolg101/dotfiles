@@ -12,7 +12,7 @@ function! NERDTreeMoveCursor()
 endfunction
 
 let NERDTreeSortHiddenFirst=1   " Show hidden folders first
-let NERDTreeIgnore=[".git/"]     " Do not show files in list
+let NERDTreeIgnore=[".git", "__pycache__"]     " Do not show files in list
 let NERDTreeShowHidden=1        " Show hidden files
 let NERDTreeShowLineNumbers=1   " Show line numbers
 
