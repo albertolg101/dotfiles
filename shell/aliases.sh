@@ -11,8 +11,8 @@ alias la='ls -a'
 alias lla='ls -al'
 alias tree='ls -T'
 
-# cat as batcat
-alias cat='batcat'
+# cat as bat
+alias cat='bat'
 
 # Aliases to protect against overwriting
 alias cp='cp -i'
