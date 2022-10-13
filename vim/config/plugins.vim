@@ -16,6 +16,7 @@ let NERDTreeIgnore=[".git", "__pycache__"]     " Do not show files in list
 let NERDTreeShowHidden=1        " Show hidden files
 let NERDTreeShowLineNumbers=1   " Show line numbers
 let NERDTreeWinSize=50          " NERDTree Window size
+let NERDTreeQuitOnOpen=1        " Closes the tree window or bookmark table after opening a file
 
 " Start NERDTree when Vim is started without file arguments.
 autocmd StdinReadPre * let s:std_in=1
