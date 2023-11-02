@@ -1,0 +1,121 @@
+{
+  "layer": "top", // Waybar at top layer
+    // "position": "bottom", // Waybar position (top|bottom|left|right)
+    "height": 24, // Waybar height (to be removed for auto height)
+    // "width": 1280, // Waybar width
+    "spacing": 4, // Gaps between modules (4px)
+    // Choose the order of the modules
+    "modules-left": [
+      "hyprland/workspaces"
+    ],
+    "modules-center": [
+      "cpu",
+      "memory",
+      "disk",
+      "network#trafic",
+      "temperature"
+    ],
+    "modules-right": [
+      "tray",
+      // "mpris",
+      "keyboard-state#capslock",
+      "keyboard-state#numlock",
+      "pulseaudio",
+      "network",
+      "bluetooth",
+      "battery",
+      "clock"
+    ],
+
+    // Modules left
+    "hyprland/workspaces": {
+      "disable-scroll": true,
+      "warp-on-scroll": false,
+      "format": "{name}{icon}",
+      "format-icons": {
+        "urgent": " ",
+        "default": ""
+      }
+    },
+
+    // Modules center
+    "cpu": {
+      "format": "<b>CPU:</b> {usage}%"
+    },
+    "memory": {
+      "format": "<b>RAM:</b> {used}GiB"
+    },
+    "disk": {
+      "format": "<b>ROM:</b> {free}"
+    },
+    "network#trafic": {
+      "interval": 5,
+      "format": "<b>Network:</b> {bandwidthUpBytes}  |{bandwidthDownBytes}",
+      "format-disconnected": ""
+    },
+    "temperature": {
+      "format": "<b>Temp:</b> {temperatureC}°C"
+    },
+
+    "tray": {
+      "icon-size": 18,
+      "spacing": 10
+    },
+    "keyboard-state#capslock": {
+      "capslock": true,
+      "format": {
+        "capslock": "{icon}"
+      },
+      "format-icons": {
+        "locked": "󰬈",
+        "unlocked": ""
+      }
+    },
+    "keyboard-state#numlock": {
+      "numlock": true,
+      "format": {
+        "numlock": "{icon}"
+      },
+      "format-icons": {
+        "locked": "󰎤",
+        "unlocked": ""
+      }
+    },
+    "pulseaudio": {
+      "format": "{icon} {volume}%",
+      "format-muted": "  {volume}%",
+      "format-icons": {
+        "default": [" ", " ", " "]
+      }
+    },
+    "network": {
+      // "interface": "wlp2*", // (Optional) To force the use of this interface
+      "format-wifi": "  {essid} ({signalStrength}%)",
+      "format-ethernet": "  {ipaddr}/{cidr}",
+      "format-linked": "  {ifname} (No IP) ",
+      "format-disconnected": "Disconnected ⚠ ",
+      "format-alt": "{ifname}: {ipaddr}/{cidr}",
+      "tooltip-format": "  {ifname} via {gwaddr} "
+    },
+    "bluetooth": {
+      "controller": "nitro5",
+      "format-on": "",
+      "format-off": "󰂲",
+      "format-connected": "󰂱 {device_alias}",
+      "on-click": "~/.config/waybar/scripts/toogle-bluetooth.fish"
+    },
+    "battery": {
+      "states": {
+        "warning": 20,
+        "critical": 15
+      },
+      "format": "{icon} {capacity}%",
+      "format-charging": " {icon} {capacity}%",
+      "format-alt": "{icon} {time}",
+      "format-icons": [" ", " ", " ", " ", " "]
+    },
+    "clock": {
+      "format": "{:%a %b %Od %R}"
+    }
+}
+
