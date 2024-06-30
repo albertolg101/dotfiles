@@ -1,0 +1,19 @@
+- defaults:
+    link:
+        create: true
+        relink: true
+
+- clean: ['~', '~/.config']
+
+- link:
+    ~/.config/environment.d:
+    ~/.config/fish:
+    ~/.config/git:
+    ~/.config/hypr:
+    ~/.config/kitty:
+    ~/.config/nvim:
+    ~/.config/waybar:
+    ~/.config/wpaperd:
+    ~/.local/share/fonts: 
+        glob: true
+        path: fonts/*
