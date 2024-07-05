@@ -4,3 +4,5 @@
 [user]
 	email = albertoleyvaguerra@gmail.com
 	name = Alberto Leyva Guerra (ALG)
+[init]
+	defaultBranch = main
