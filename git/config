@@ -1,8 +1,18 @@
 [credential "https://github.com"]
 	helper = 
-	helper = !/usr/bin/gh auth git-credential
+	helper = !/usr/local/bin/gh auth git-credential
 [user]
 	email = albertoleyvaguerra@gmail.com
-	name = Alberto Leyva Guerra (ALG)
+	name = Alberto Leyva Guerra
 [init]
 	defaultBranch = main
+[credential "https://gist.github.com"]
+	helper = 
+	helper = !/usr/local/bin/gh auth git-credential
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[core]
+	autocrlf = input
